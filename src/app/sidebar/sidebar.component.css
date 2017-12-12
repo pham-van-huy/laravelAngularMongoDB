@@ -1,0 +1,116 @@
+.container {
+  margin: 0 auto;
+  overflow: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+a {
+    color: white;
+}
+
+.main {
+  min-height: 100%;
+  background-color: #eff0f1;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #f08080;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar>ul>li {
+    border-bottom: 1px solid white;
+}
+
+#sidebar>ul>li>ul>li {
+    border-top: 1px solid white;
+    background-color: #bb7676;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+.sidebar-header {
+    border-top: 1px solid white;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #f08080;
+}
+
+#sidebar ul.components {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #f08080;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #f08080;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #f08080;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #f08080;
+}
+
+a.article, a.article:hover {
+    background: #f08080 !important;
+    color: #fff !important;
+}
